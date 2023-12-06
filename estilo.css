@@ -34,3 +34,7 @@ li {
 .items {
     height: 100%;    
 }
+.items a{
+    position: absolute;
+    bottom: 0px;
+}
