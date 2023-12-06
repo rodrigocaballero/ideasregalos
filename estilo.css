@@ -26,6 +26,9 @@ ul {
 li {
     display: inline;
 }
+#itemes{
+    background-color: red;
+}
 .items {
     background-color: blue;
     height: 25vh;
