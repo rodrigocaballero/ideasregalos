@@ -8,6 +8,7 @@ h1 {
 }
 h2 {
     text-align: center;
+    font-size: 2em;
 }
 p {
     text-align: center;
@@ -26,6 +27,4 @@ li {
 }
 .items {
     background-color: blue;
-    padding: 10;
-    margin: 10;
 }
