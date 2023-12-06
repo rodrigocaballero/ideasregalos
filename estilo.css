@@ -28,8 +28,11 @@ li {
 }
 #itemes{
     background-color: red;
+    text-align: center;
+
 }
 .items {
     background-color: blue;
     height: 25vh;
+    
 }
