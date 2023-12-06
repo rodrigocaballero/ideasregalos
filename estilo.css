@@ -24,3 +24,6 @@ ul {
 li {
     display: inline;
 }
+.items {
+    background-color: red;
+}
