@@ -1,14 +1,11 @@
 body{
-    background-color: #000;
     width: auto;
     height: auto;
     font-family: 'Roboto', sans-serif;
 }
 h1 {
     text-align: center;
-    color: aliceblue;
 }
 p {
     color: aliceblue;
-    text-align: center;
 }
