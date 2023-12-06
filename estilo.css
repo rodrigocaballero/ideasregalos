@@ -18,6 +18,9 @@ h4 {
 #categoríasimg {
     width: auto;
 }
+ul {
+    display: inline;
+}
 .items {
     width: 25%;
     text-align: center;
