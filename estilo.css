@@ -6,6 +6,7 @@ body{
 h1 {
     text-align: center;
     padding: 20px;
+    font-weight: 900;
 }
 h2 {
     text-align: center;
@@ -40,8 +41,4 @@ li {
 }
 .container {
     margin-top: 20px;
-}
-.img-thumbnail {
-    width: 20%;
-    height: auto;
 }
