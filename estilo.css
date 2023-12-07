@@ -41,3 +41,7 @@ li {
 .container {
     margin-top: 20px;
 }
+.img-thumbnail {
+    width: 20%;
+    height: auto;
+}
