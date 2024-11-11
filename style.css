@@ -1,10 +1,18 @@
+body{
+    font-family: "Raleway", sans-serif;
+    background-image: url(img/bg.avif)
+}
+.wrap{
+    background: rgba(255, 255, 255,0.8);
+    width: 75%;
+    margin: auto;
+}
 .categoria{
     position:relative;
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 .productos{
-    position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
@@ -17,4 +25,41 @@ ul li {
     text-align: center;
     margin: auto;
     padding: 10px;
+}
+h1{
+    color:#4a4949;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+p{
+    text-align: center;
+    color: #7f7d7d;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+    background-color: #2a2a2a;
+    padding: auto;
+}
+.intro{
+    padding-top: 1%;
+    margin: 100px;
+}
+ul h3{
+    text-align: justify;
+}
+ul p{
+    text-align: justify;
+}
+ul a{
+    text-align:justify;
 }
