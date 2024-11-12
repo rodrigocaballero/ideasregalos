@@ -25,6 +25,7 @@ ul li {
     text-align: center;
     margin: auto;
     padding: 10px;
+    width: 300px;
 }
 h1{
     color:#4a4949;
@@ -62,4 +63,7 @@ ul p{
 }
 ul a{
     text-align:justify;
+}
+ul h4{
+    text-align: justify;
 }
