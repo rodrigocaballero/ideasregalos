@@ -1,18 +1,18 @@
 body{
-    background-color: #181818;
+    background-color: #e8e8e8;
 }
 
 h1{
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #e7e7e7;
+  color: #353535;
 }
 p{
     font-family: "Roboto Flex", sans-serif;
-    color: #e7e7e7;
+    color: #353535;
 }
 
 svg{
-    color: #e7e7e7;
+    color: #353535;
 }
