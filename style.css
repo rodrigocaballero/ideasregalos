@@ -21,3 +21,7 @@ svg{
 .tarjeta{
     padding: 10px;
 }
+
+.tarjeta h5{
+    font-size: small;
+}
