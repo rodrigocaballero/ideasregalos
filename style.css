@@ -23,5 +23,8 @@ svg{
 }
 
 .tarjeta h5{
+    font-size:medium;
+}
+.tarjeta p{
     font-size: small;
 }
