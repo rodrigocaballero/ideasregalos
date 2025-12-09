@@ -1,38 +1,10 @@
 body{
     background-color: #ffffff;
-    font-family: "Roboto Flex", sans-serif;
 }
 
 h1{
-  font-family: "Lobster", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #353535;
-}
-p{
-    font-family: "Roboto Flex", sans-serif;
-    color: #353535;
-}
-
-svg{
-    color: #353535;
-}
-
-.tarjeta{
-    padding: 10px;
-}
-
-.tarjeta h5{
-    font-size:medium;
-    margin-top: 10px;
-}
-.tarjeta p{
-    font-size: small;
-}
-.tarjeta a{
-    font-size: 12px;
-    color: #e04b00;
-    font-family: "Hanken Grotesk", sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
 }
