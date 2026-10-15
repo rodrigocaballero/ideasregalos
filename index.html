@@ -3,299 +3,438 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Ideas de regalos organizadas por categoría, con fotos y opciones para encontrar cada producto.">
-  <title>Ideas para regalos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link href="style.css" rel="stylesheet">
+  <title>Ideas para Regalo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="page-header" id="inicio">
-    <div class="container">
-      <h1>Ideas para regalos</h1>
-      <p>Una lista de ideas para regalar. Los productos son una guía: también puedes elegir algo parecido.</p>
-    </div>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-perfumes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 3h6v3H9zM10 6v3H8.5v11h7V9H14V6M8.5 12h7" />
+    </symbol>
+    <symbol id="icon-calzado" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 15.5c2.3-.2 4.1-1.4 5.5-4l1.3 1.2c1.6 1.5 3.4 2.3 5.5 2.5l3.2.3c1.5.2 2.5 1.4 2.5 2.8V20H3v-4.5Z" />
+      <path d="m9.7 13 1.8-1.3M12 14.2l1.5-1.1M3 17.5h18" />
+    </symbol>
+    <symbol id="icon-relojes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 2h6l1 5H8l1-5ZM8 17h8l-1 5H9l-1-5Z" />
+      <rect x="6.5" y="7" width="11" height="10" rx="2.5" />
+      <path d="M12 9.5v2.8l1.8 1.2" />
+    </symbol>
+    <symbol id="icon-mochilas" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 6V5a4 4 0 0 1 8 0v1M6 9a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v11H6V9Z" />
+      <path d="M9 10h6v4H9zM4 11v6a2 2 0 0 0 2 2M20 11v6a2 2 0 0 1-2 2" />
+    </symbol>
+    <symbol id="icon-tecnologia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="13" rx="1.5" />
+      <path d="M2 20h20M9 17l-1 3m7-3 1 3" />
+    </symbol>
+    <symbol id="icon-otros" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 10h18v11H3zM2 6h20v4H2zM12 6v15M12 6H8.5A2.5 2.5 0 1 1 11 3.5L12 6Zm0 0h3.5A2.5 2.5 0 1 0 13 3.5L12 6Z" />
+    </symbol>
+  </svg>
+  <header>
+    <h1>Ideas para Regalo</h1>
+    <p>Ideas para regalar a Rodrigo, pueden ser los mismos productos mostrados a continuación o variantes de estos.</p>
   </header>
 
-  <nav class="section-menu" aria-label="Secciones de regalos">
-    <div class="section-menu__links">
-      <a href="#perfumes">Perfumes</a>
-      <a href="#zapatillas">Zapatillas</a>
-      <a href="#relojes">Relojes</a>
-      <a href="#mochilas">Mochilas</a>
-      <a href="#tecnologia">Tecnología</a>
-      <a href="#otros">Otros</a>
-    </div>
-    <details class="section-menu__mobile">
-      <summary>Elegir categoría <span aria-hidden="true">⌄</span></summary>
-      <div class="section-menu__dropdown">
-        <a href="#perfumes">Perfumes</a>
-        <a href="#zapatillas">Zapatillas</a>
-        <a href="#relojes">Relojes</a>
-        <a href="#mochilas">Mochilas</a>
-        <a href="#tecnologia">Tecnología</a>
-        <a href="#otros">Otros</a>
+  <main>
+    <nav class="category-menu" aria-label="Categorías de regalos">
+      <div class="category-menu__links">
+        <a href="#perfumes"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-perfumes"></use></svg>Perfumes</a>
+        <a href="#calzado"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-calzado"></use></svg>Calzado</a>
+        <a href="#relojes"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-relojes"></use></svg>Relojes</a>
+        <a href="#mochilas"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-mochilas"></use></svg>Mochilas</a>
+        <a href="#tecnologia"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-tecnologia"></use></svg>Tecnología</a>
+        <a href="#otros"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-otros"></use></svg>Otros</a>
       </div>
-    </details>
-  </nav>
+      <details class="category-menu__mobile">
+        <summary>Elegir categoría <span aria-hidden="true">⌄</span></summary>
+        <div class="category-menu__dropdown">
+          <a href="#perfumes"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-perfumes"></use></svg>Perfumes</a>
+          <a href="#calzado"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-calzado"></use></svg>Calzado</a>
+          <a href="#relojes"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-relojes"></use></svg>Relojes</a>
+          <a href="#mochilas"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-mochilas"></use></svg>Mochilas</a>
+          <a href="#tecnologia"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-tecnologia"></use></svg>Tecnología</a>
+          <a href="#otros"><svg class="icon icon--menu" aria-hidden="true"><use href="#icon-otros"></use></svg>Otros</a>
+        </div>
+      </details>
+    </nav>
 
-  <main class="container gift-list">
-    <section class="gift-section" id="perfumes" aria-labelledby="perfumes-title">
-      <h2 id="perfumes-title">Perfumes</h2>
-      <ul class="row g-4 list-unstyled">
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/perfume2.webp" alt="Dolce &amp; Gabbana Light Blue Pour Homme" loading="lazy">
-            <h3>Dolce &amp; Gabbana Light Blue</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Dolce &amp; Gabbana Light Blue">
-              <a href="https://www.eliteperfumes.cl/collections/para-el/products/dolce-gabbana-light-blue-pour-homme-edt-100ml-version-2025-h" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
-              <a href="https://listado.mercadolibre.cl/dolce-gabbana-light-blue-pour-homme" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Dolce+%26+Gabbana+Light+Blue+Pour+Homme" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+    <div class="categories">
+      <section class="category" id="perfumes" aria-labelledby="perfumes-title">
+        <h2 id="perfumes-title"><svg class="icon icon--heading" aria-hidden="true"><use href="#icon-perfumes"></use></svg>Perfumes</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-perfumes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Dolce &amp; Gabbana Light Blue Pour Homme EDT 100 ml</h3>
+              <p>Versión 2025</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.eliteperfumes.cl/collections/para-el/products/dolce-gabbana-light-blue-pour-homme-edt-100ml-version-2025-h" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/perfume3.webp" alt="Issey Miyake L'Eau d'Issey Homme" loading="lazy">
-            <h3>Issey Miyake L'Eau d'Issey Homme</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Issey Miyake L'Eau d'Issey Homme">
-              <a href="https://www.eliteperfumes.cl/collections/para-el/products/issey-miyake-leau-dissey-homme-edt-125-ml-h" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
-              <a href="https://listado.mercadolibre.cl/issey-miyake-leau-dissey-homme" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Issey+Miyake+L%27Eau+d%27Issey+Homme" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-perfumes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Issey Miyake L'Eau d'Issey Pour Homme EDT 200 ml</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.eliteperfumes.cl/products/issey-miyake-leau-dissey-homme-edt-200ml-h" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/perfume1.webp" alt="Lattafa Pride Blue Sapphire" loading="lazy">
-            <h3>Lattafa Pride Blue Sapphire</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Lattafa Pride Blue Sapphire">
-              <a href="https://www.eliteperfumes.cl/collections/para-el/products/lattafa-pride-blue-sapphire-unisex-edp-100-ml-u" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
-              <a href="https://listado.mercadolibre.cl/lattafa-pride-blue-sapphire" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Lattafa+Pride+Blue+Sapphire" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-perfumes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Giorgio Armani Emporio Stronger With You Intensely EDP 50 ml</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.falabella.com/falabella-cl/product/7465087/perfume-giorgio-armani-emporio-stronger-with-you-intensely-edp-50-ml/7465087" target="_blank" rel="noopener noreferrer">Falabella</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/perfume5.webp" alt="Giorgio Armani Emporio Armani Stronger With You Intensely" loading="lazy">
-            <h3>Emporio Armani Stronger With You</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Emporio Armani Stronger With You">
-              <a href="https://www.eliteperfumes.cl/collections/para-el/products/giorgio-armani-giorgio-armani-emporio-armani-stronger-with-you-intensely-edp-50-ml-h" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
-              <a href="https://listado.mercadolibre.cl/armani-stronger-with-you-intensely" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Emporio+Armani+Stronger+With+You+Intensely" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-perfumes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Jo Milano Paris Game Of Spades Bonus Parfum 100 ml</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.eliteperfumes.cl/products/jo-milano-paris-jo-milano-paris-game-of-spades-bonus-parfum-100-ml-u" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/perfume4.webp" alt="Giorgio Armani Acqua di Giò Parfum" loading="lazy">
-            <h3>Giorgio Armani Acqua di Giò Parfum</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Giorgio Armani Acqua di Giò Parfum">
-              <a href="https://www.eliteperfumes.cl/collections/para-el/products/giorgio-armani-acqua-di-gio-parfum-50-ml-h" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
-              <a href="https://listado.mercadolibre.cl/acqua-di-gio-parfum" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Giorgio+Armani+Acqua+di+Gio+Parfum" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-perfumes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Rasasi Hawas Tropical EDP 100 ml</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.eliteperfumes.cl/collections/para-el/products/rasasi-rasasi-hawas-tropical-edp-100-ml-h" target="_blank" rel="noopener noreferrer">Elite Perfumes</a>
+              </div>
             </div>
           </article>
-        </li>
-      </ul>
-    </section>
-
-    <section class="gift-section" id="zapatillas" aria-labelledby="zapatillas-title">
-      <h2 id="zapatillas-title">Zapatillas (talla 12)</h2>
-      <ul class="row g-4 list-unstyled">
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/calzado1.webp" alt="Zapatillas New Balance 80 negras" loading="lazy">
-            <h3>New Balance 80 negras</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar New Balance 80 negras">
-              <a href="https://newbalance.cl/hombre/zapatillas/zapatillas-urbanas/zapatillas-urbanas-hombre-new-balance-80-negra-169000000bb80blk21.html" target="_blank" rel="noopener noreferrer">New Balance</a>
-              <a href="https://listado.mercadolibre.cl/new-balance-80-negra" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=New+Balance+80+negra" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+        </div>
+      </section>
+      <section class="category" id="calzado" aria-labelledby="calzado-title">
+        <h2 id="calzado-title"><svg class="icon icon--heading" aria-hidden="true"><use href="#icon-calzado"></use></svg>Calzado</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>PUMA Suede XL</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://cl.puma.com/zapatillas-suede-xl-395205-02.html" target="_blank" rel="noopener noreferrer">PUMA</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/calzado2.webp" alt="Zapatillas New Balance Numeric Jamie Foy 306 bicolor" loading="lazy">
-            <h3>New Balance Numeric Jamie Foy 306 bicolor</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar New Balance Numeric Jamie Foy 306">
-              <a href="https://newbalance.cl/hombre/zapatillas/zapatillas-urbanas/zapatillas-urbanas-hombre-new-balance-numeric-jamie-foy-306-bicolor-16900000nm306zuc96.html" target="_blank" rel="noopener noreferrer">New Balance</a>
-              <a href="https://listado.mercadolibre.cl/new-balance-jamie-foy-306" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=New+Balance+Numeric+Jamie+Foy+306+bicolor" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>adidas Terrex Skychaser AX5 Mid Gore-Tex</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.adidas.cl/zapatillas-de-senderismo-terrex-skychaser-ax5-mid-gore-tex/JQ2207.html" target="_blank" rel="noopener noreferrer">adidas</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/calzado5.avif" alt="Zapatillas Puma Suede XL" loading="lazy">
-            <h3>Puma Suede XL</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Puma Suede XL">
-              <a href="https://cl.puma.com/zapatillas-suede-xl-395205-02.html?size=12" target="_blank" rel="noopener noreferrer">Puma</a>
-              <a href="https://listado.mercadolibre.cl/puma-suede-xl" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Puma+Suede+XL" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>adidas Terrex Skychaser Mid Gore-Tex</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.adidas.cl/zapatillas-de-senderismo-terrex-skychaser-mid-gore-tex/IH1091.html" target="_blank" rel="noopener noreferrer">adidas</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/calzado3.avif" alt="Zapatillas Adidas Campus 00s" loading="lazy">
-            <h3>Adidas Campus 00s</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Adidas Campus 00s">
-              <a href="https://www.adidas.cl/zapatillas-campus-00s/GY0042.html" target="_blank" rel="noopener noreferrer">Adidas</a>
-              <a href="https://listado.mercadolibre.cl/adidas-campus-00s" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Adidas+Campus+00s" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Vans Skate Authentic</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.vans.cl/collections/zapatillas/products/zapatilla-hombre-mn-skate-authentic-vans-vn0a5fc8w00-6lh?variant=45600575586502&amp;filter.v.availability=1" target="_blank" rel="noopener noreferrer">Vans</a>
+              </div>
             </div>
           </article>
-        </li>
-      </ul>
-    </section>
-
-    <section class="gift-section" id="relojes" aria-labelledby="relojes-title">
-      <h2 id="relojes-title">Relojes</h2>
-      <ul class="row g-4 list-unstyled">
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/reloj2.webp" alt="Reloj Casio análogo MTP-V001L negro con correa de cuero" loading="lazy">
-            <h3>Casio análogo MTP-V001L negro</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Casio MTP-V001L negro">
-              <a href="https://www.dandolahora.cl/collections/relojes-casio-vintage/products/reloj-casio-analogo-mtp-v001l-1budf-negro-correa-de-cuero?_pos=23&amp;_fid=87c2995fc&amp;_ss=c" target="_blank" rel="noopener noreferrer">Dándolo a la Hora</a>
-              <a href="https://listado.mercadolibre.cl/casio-mtp-v001l-negro" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Casio+MTP-V001L+negro" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Vans Old Skool Black</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.vans.cl/collections/zapatillas/products/zapatillas-old-skool-black-vn-3uvn000d3hy280043?filter.v.availability=1" target="_blank" rel="noopener noreferrer">Vans</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/reloj3.jpg" alt="Reloj Casio Vintage A158WA-1DF azul y plateado" loading="lazy">
-            <h3>Casio Vintage A158WA-1DF azul/plateado</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Casio Vintage A158WA-1DF">
-              <a href="https://www.dandolahora.cl/collections/relojes-casio-vintage/products/reloj-casio-vintage-a158wa-1df-azul-plateado" target="_blank" rel="noopener noreferrer">Dándolo a la Hora</a>
-              <a href="https://listado.mercadolibre.cl/casio-a158wa-1df" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Casio+Vintage+A158WA-1DF" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>New Balance 530 Bicolor</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://newbalance.cl/zapatillas-urbanas-unisex-new-balance-530-bicolor-169000000mr530sg96.html" target="_blank" rel="noopener noreferrer">New Balance</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/reloj4.webp" alt="Reloj Casio Vintage LF-20W-1ADF Twin-Graph" loading="lazy">
-            <h3>Casio Vintage LF-20W-1ADF Twin-Graph</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Casio Vintage LF-20W-1ADF">
-              <a href="https://www.dandolahora.cl/collections/relojes-casio-vintage/products/reloj-casio-vintage-lf-20w-1adf-twin-graph-reissue-resina" target="_blank" rel="noopener noreferrer">Dándolo a la Hora</a>
-              <a href="https://listado.mercadolibre.cl/casio-lf-20w-1adf" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Casio+Vintage+LF-20W-1ADF" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Bullboxer Kelso 6-31 Botines de Cuero Negros</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.cardinale.cl/products/bullboxer-botines-hombre-cuero-kelso-6-31-negro?variant=45553860608150" target="_blank" rel="noopener noreferrer">Cardinale</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/reloj5.webp" alt="Reloj Casio análogo MTP-1183A plateado" loading="lazy">
-            <h3>Casio análogo MTP-1183A plateado</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Casio MTP-1183A">
-              <a href="https://www.dandolahora.cl/collections/relojes-casio-vintage/products/reloj-casio-analogo-mtp-1183a-1a-plateado-acero-inoxidable" target="_blank" rel="noopener noreferrer">Dándolo a la Hora</a>
-              <a href="https://listado.mercadolibre.cl/casio-mtp-1183a" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Casio+MTP-1183A" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Bullboxer Haren 6-59 Botines de Cuero Negros</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.cardinale.cl/products/bullboxer-botines-hombre-cuero-haren-6-59-negro?variant=45553911333014&amp;_su_rec=OrscduqZB2Qehd_lGA-4njMqI-egWmD82nYewTI8XjcqK45tMtHqiC-PumhhG5ND21A1tHPNAiIzMWe39MhfaTCA2WqE3kYdA1wRps1OIuLggg8JZquu5WHDEV3YgVMe5OsxfNN30eVpKagLkYZ8bHeJI78DZgPkSlVv5ZX4DvbYt0-vPL1EsaMzwGWT9CvlDVs16uA2xWwErra-_mQo2CdYs_vo8cQFTsnX6KYLYvsKGdAqeiWaaqZmihYEMcYNmtwVs-pOMpG22iHImr4KtYwRycMHoL8B7Ds86z2uhaHp78av8kvqlTzDDKbzj2-m8O6att5M19e1paWRv1sibAg&amp;_su_rec_id=84b4686f-8946-4d09-9062-ac0b90297f6c-1792024925" target="_blank" rel="noopener noreferrer">Cardinale</a>
+              </div>
             </div>
           </article>
-        </li>
-      </ul>
-    </section>
-
-    <section class="gift-section" id="mochilas" aria-labelledby="mochilas-title">
-      <h2 id="mochilas-title">Mochilas</h2>
-      <ul class="row g-4 list-unstyled">
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/mochila1.webp" alt="Mochila Saxoline Ryde negra para notebook de 14 pulgadas" loading="lazy">
-            <h3>Mochila Ryde negra para notebook de 14"</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar mochila Ryde">
-              <a href="https://saxoline.cl/products/mochila-roll-notebook-14-ryde-negra" target="_blank" rel="noopener noreferrer">Saxoline</a>
-              <a href="https://listado.mercadolibre.cl/mochila-roll-notebook-14-ryde" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=mochila+Ryde+notebook+14+negra" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Dr. Martens 2976 Smooth</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://drmartens.cl/products/originals-boots-smooth-2976-archive" target="_blank" rel="noopener noreferrer">Dr. Martens</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/mochila2.webp" alt="Mochila Saxoline Kent negra para notebook de 16 pulgadas" loading="lazy">
-            <h3>Mochila Kent negra para notebook de 16"</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar mochila Kent">
-              <a href="https://saxoline.cl/products/mochila-notebook-16-kent-negra-1" target="_blank" rel="noopener noreferrer">Saxoline</a>
-              <a href="https://listado.mercadolibre.cl/mochila-kent-notebook-16" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=mochila+Kent+notebook+16+negra" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-calzado"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Dr. Martens 1460 Smooth</h3>
+              <p>Talla 12, 11 1/2, 46 o 45</p>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://drmartens.cl/products/originals-boots-smooth-1460" target="_blank" rel="noopener noreferrer">Dr. Martens</a>
+              </div>
             </div>
           </article>
-        </li>
-      </ul>
-    </section>
-
-    <section class="gift-section" id="tecnologia" aria-labelledby="tecnologia-title">
-      <h2 id="tecnologia-title">Tecnología</h2>
-      <ul class="row g-4 list-unstyled">
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/otro1.webp" alt="Teléfono Xiaomi Redmi 15C 5G" loading="lazy">
-            <h3>Redmi 15C 5G</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Redmi 15C 5G">
-              <a href="https://www.mi.com/cl/product/redmi-15c-5g/buy/" target="_blank" rel="noopener noreferrer">Xiaomi</a>
-              <a href="https://listado.mercadolibre.cl/redmi-15c-5g" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Redmi+15C+5G" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+        </div>
+      </section>
+      <section class="category" id="relojes" aria-labelledby="relojes-title">
+        <h2 id="relojes-title"><svg class="icon icon--heading" aria-hidden="true"><use href="#icon-relojes"></use></svg>Relojes</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-relojes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Casio Vintage AE-1200WHD-1AVDF World Time Royale Plateado</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.dandolahora.cl/collections/los-relojes-mas-vendidos/products/reloj-world-time-royale-casio-vintage-ae-1200whd-1avdf-plateado" target="_blank" rel="noopener noreferrer">Dándolo Hora</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/otro2.webp" alt="Teléfono POCO M8 5G" loading="lazy">
-            <h3>POCO M8 5G</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar POCO M8 5G">
-              <a href="https://www.mi.com/cl/product/poco-m8-5g/buy/" target="_blank" rel="noopener noreferrer">Xiaomi</a>
-              <a href="https://listado.mercadolibre.cl/poco-m8-5g" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=POCO+M8+5G" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-relojes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Casio Vintage A159WA-N1DF Plateado Made in Japan</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.dandolahora.cl/collections/los-relojes-mas-vendidos/products/reloj-casio-vintage-a159wa-n1df-plateado-made-in-japan" target="_blank" rel="noopener noreferrer">Dándolo Hora</a>
+              </div>
             </div>
           </article>
-        </li>
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="img/otros3.avif" alt="Notebook gamer Acer Nitro Lite con tarjeta gráfica RTX 3050" loading="lazy">
-            <h3>Notebook gamer Acer Nitro Lite (RTX 3050)</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar Acer Nitro Lite RTX 3050">
-              <a href="https://www.acerstore.cl/products/notebook-gamer-nitro-lite-rtx-3050" target="_blank" rel="noopener noreferrer">Acer Store</a>
-              <a href="https://listado.mercadolibre.cl/notebook-acer-nitro-lite-rtx-3050" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=Acer+Nitro+Lite+RTX+3050" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-relojes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Casio Análogo MTP-1302D-3AJF Blanco 38.5 mm JDM</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.dandolahora.cl/collections/los-relojes-mas-vendidos/products/reloj-casio-analogo-mtp-1302d-3ajf-blanco-38-5mm-jdm" target="_blank" rel="noopener noreferrer">Dándolo Hora</a>
+              </div>
             </div>
           </article>
-        </li>
-      </ul>
-    </section>
-
-    <section class="gift-section" id="otros" aria-labelledby="otros-title">
-      <h2 id="otros-title">Otros</h2>
-      <ul class="row g-4 list-unstyled">
-        <li class="col-12 col-sm-6 col-lg-4">
-          <article class="gift-card">
-            <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Equipo de musculación con pesas" loading="lazy">
-            <h3>Kit de musculación de hierro, 50 kg</h3>
-            <div class="gift-options" aria-label="Opciones para encontrar un kit de musculación de 50 kg">
-              <a href="https://www.decathlon.cl/p/335265-73025-kit-musculacion-hierro-50-kg.html" target="_blank" rel="noopener noreferrer">Decathlon</a>
-              <a href="https://listado.mercadolibre.cl/kit-musculacion-hierro-50-kg" target="_blank" rel="noopener noreferrer">Mercado Libre</a>
-              <a href="https://www.google.com/search?tbm=shop&amp;q=kit+musculacion+hierro+50+kg" target="_blank" rel="noopener noreferrer">Google Shopping</a>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-relojes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Casio Análogo MTP-V001L-1BUDF Negro con Correa de Cuero</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.dandolahora.cl/collections/los-relojes-mas-vendidos/products/reloj-casio-analogo-mtp-v001l-1budf-negro-correa-de-cuero" target="_blank" rel="noopener noreferrer">Dándolo Hora</a>
+              </div>
             </div>
           </article>
-        </li>
-      </ul>
-    </section>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-relojes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Casio Vintage AE-1500WHX-1AVDF Negro</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.dandolahora.cl/collections/los-relojes-mas-vendidos/products/reloj-casio-vintage-ae-1500whx-1avdf-negro" target="_blank" rel="noopener noreferrer">Dándolo Hora</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-relojes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Casio Vintage AE-1200WHB-1BVDF World Time Royale Verde</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.dandolahora.cl/collections/los-relojes-mas-vendidos/products/reloj-world-time-royale-casio-vintage-ae-1200whb-1bvdf-verde" target="_blank" rel="noopener noreferrer">Dándolo Hora</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-relojes"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Casio Análogo LTP-VT01L-1BUDF con Correa de Cuero Negra</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.dandolahora.cl/collections/los-relojes-mas-vendidos/products/reloj-casio-analogo-ltp-vt01l-1budf-correa-de-cuero-negra" target="_blank" rel="noopener noreferrer">Dándolo Hora</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="category" id="mochilas" aria-labelledby="mochilas-title">
+        <h2 id="mochilas-title"><svg class="icon icon--heading" aria-hidden="true"><use href="#icon-mochilas"></use></svg>Mochilas</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-mochilas"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Mochila de Viaje Comando Head</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.headchile.com/mochila-viaje-comando-head" target="_blank" rel="noopener noreferrer">Head</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-mochilas"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Bolso Mochila Convertible Mountain Negro Amarillo</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://saxoline.cl/products/bolso-mochila-convertible-mountain-negro-amarillo" target="_blank" rel="noopener noreferrer">Saxoline</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="category" id="tecnologia" aria-labelledby="tecnologia-title">
+        <h2 id="tecnologia-title"><svg class="icon icon--heading" aria-hidden="true"><use href="#icon-tecnologia"></use></svg>Tecnología</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-tecnologia"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Xiaomi Redmi 17</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.mi.com/cl/product/redmi-17/" target="_blank" rel="noopener noreferrer">Xiaomi</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-tecnologia"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Xiaomi Batería Externa Portátil 33W 20000mAh con Cable Integrado Azul</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.pcfactory.cl/producto/53747-xiaomi-bateria-externa-portatil-xiaomi-33w-20000mah-integrated-cable-blue-gl?origin=PCF" target="_blank" rel="noopener noreferrer">PC Factory</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-tecnologia"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Acer Nitro Lite Notebook Gamer Intel Core i5 RTX 4050 16GB RAM 512GB SSD 16″ 165Hz WUXGA</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.paris.cl/notebook-gamer-nitro-lite-intel-core-i5-rtx4050-16gb-ram-512gb-ssd-16-165hz-wuxga-310275999.html" target="_blank" rel="noopener noreferrer">Paris</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-tecnologia"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Xiaomi Redmi Pad 4GB RAM 64GB UFS 2.2 9.7″ 120Hz Gris con Audífonos</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.paris.cl/tablet-redmi-pad-4gb-ram-64gb-ufs-22-97-120hz-gris-audifonos-576071999.html?resolvedBidId=Q5u-LAoQBq0CdHTMdRi0BBit2bspUhIQAaD9RXilchON0VEjYdXBjxoQAZ30OSnTcPKR8rURozkX0iINCgk1NzYwNzE5OTkQATDzuZYBSAFQmd3l6JM0YJITchAAAAAAAAAAAAAAAAAAAAAAeAKFAQAAAEE" target="_blank" rel="noopener noreferrer">Paris</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="category" id="otros" aria-labelledby="otros-title">
+        <h2 id="otros-title"><svg class="icon icon--heading" aria-hidden="true"><use href="#icon-otros"></use></svg>Otros</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__icon" aria-hidden="true">
+              <svg class="icon icon--product" focusable="false"><use href="#icon-otros"></use></svg>
+            </div>
+            <div class="product-card__content">
+              <h3>Carpa 2 Personas MH100 F&amp;B</h3>
+              <div class="product-card__stores" aria-label="Enlace original de compra">
+                <a href="https://www.decathlon.cl/p/carpa-2-personas-mh-100-fandb/313100/c335c251c74m8576112" target="_blank" rel="noopener noreferrer">Decathlon</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <a class="back-to-top" href="#inicio" aria-label="Volver al inicio" title="Volver al inicio">
-    <span aria-hidden="true">↑</span>
-  </a>
-
+  <footer>
+  </footer>
   <script>
-    document.querySelectorAll(".section-menu__dropdown a").forEach((link) => {
+    document.querySelectorAll(".category-menu__dropdown a").forEach((link) => {
       link.addEventListener("click", () => {
-        link.closest(".section-menu__mobile").open = false;
+        link.closest(".category-menu__mobile").open = false;
       });
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
